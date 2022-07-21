@@ -1,8 +1,10 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
 
 // styles
 const pageStyles = {
-  color: "#232129",
+  color: "black",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -120,7 +122,7 @@ const links = [
     url: "https://www.gatsbyjs.com/cloud",
     badge: true,
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "This is a site that gives users 10 squid facts. Why not 11? Because this is 10 squid wins",
     color: "#663399",
   },
 ]
@@ -129,15 +131,14 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>Ten Squid Wins</title>
       <h1 style={headingStyles}>
-        Congratulations
+        Ten Squid Wins
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
+        <span style={headingAccentStyles}>your source for 10 daily squid facts </span>
+        
       </h1>
+      <Link to="/testpage">Test Page</Link>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
